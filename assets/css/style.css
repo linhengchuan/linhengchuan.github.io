@@ -1,7 +1,16 @@
 body {
-min-height: 75rem;
-padding-top: 4.5rem;
+  min-height: 75rem;
+  padding-top: 4.5rem;
 }
+
+/* .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  margin: 0;
+} */
 
 /* .bd-placeholder-img {
 font-size: 1.125rem;

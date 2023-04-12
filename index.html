@@ -36,7 +36,7 @@
     <!-- nav bar -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Heng Chuan's site</a>
+        <a class="navbar-brand" href="./index.html"><img src="./assets/icon/favicon-32x32.png" alt=""></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -50,26 +50,33 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
-            <li class="nav-item">
-              <a class="nav-link active" href="#experiences">Experiences</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="./index.html#experiences" data-bs-toggle="dropdown" aria-expanded="false">Experiences</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./work_experiences.html#robotics_software_engineer">Senior Robotics Software Engineer</a></li>
+                <li><a class="dropdown-item" href="./work_experiences.html#mechanical_design_engineer">Subsea Mechanical Design Engineer</a></li>
+              </ul>
             </li>
+          <li class="nav-item">
             <!-- <li class="nav-item">
-              <a class="nav-link active" href="#">Projects</a>
+              <a class="nav-link active" href="./index.html#projects">Projects</a>
             </li> -->
             <li class="nav-item">
-              <a class="nav-link active" href="#skills">Skills</a>
+              <a class="nav-link active" href="./index.html#skills">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#contact">Contact</a>
+              <a class="nav-link active" href="./index.html#contact">Contact</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
+          <form class="d-flex" role="search" action="https://www.google.com/search" method="get">
             <input
               class="form-control me-2"
               type="search"
               placeholder="Search"
               aria-label="Search"
+              name="q"
             />
+            <input type="hidden" name="sitesearch" value="linhengchuan.github.io">
             <button class="btn btn-outline-success" type="submit">
               Search
             </button>
@@ -100,13 +107,13 @@
           <div class="col">
             <img
               class="img-fluid rounded w-50"
-              src="./assets/photos/hc_photo1.png"
+              src="./assets/photos/hc-photo1.png"
               alt="photo"
             />
           </div>
         </div>
       </div>
-      <br />
+      <br>
 
       <!-- Experience Content -->
       <div class="bg-body-tertiary p-5 rounded" id="experiences">
@@ -120,13 +127,29 @@
           </div>
           <div class="col-md-8">
             <h1>Experiences</h1>
-            <p>Senior Robotics Software Engineer</p>
-            <p>Subsea Mechanical Design Engineer</p>
+            <div class="bg-body-tertiary p-5 rounded">
+              <div class="row">
+                <div class="col"><a href="./work_experiences.html#robotics_software_engineer">Senior Robotics Software Engineer</a>
+                </div>
+                <div class="col">NDRMedical
+                </div>                
+                <div class="col">2020-Present
+                </div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col"><a href="./work_experiences.html#mechanical_design_engineer">Subsea Mechanical Design Engineer</a>
+                </div>
+                <div class="col">Baker Hughes
+                </div>                
+                <div class="col">2018-2020
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <br />
-
+      <br>
       <!-- Project Content -->
       <!-- <div class="bg-body-tertiary p-5 rounded" id="experiences">
         <div class="row">
@@ -144,8 +167,7 @@
           </div>
         </div>
       </div>
-      <br /> -->
-
+      <br> -->
       <!-- Skill Content -->
       <div class="bg-body-tertiary p-5 rounded" id="skills">
         <div class="row">
@@ -158,13 +180,15 @@
           </div>
           <div class="col-md-8">
             <h1>Skills</h1>
-            <p>Python</p>
-            <p>Mechanical Design</p>
+            <button type="button" class="btn btn-secondary m-1">Python</button>
+            <button type="button" class="btn btn-secondary m-1">C++</button>
+            <button type="button" class="btn btn-secondary m-1">Robot Operating System</button>
+            <button type="button" class="btn btn-secondary m-1">Web Development</button>
+            <button type="button" class="btn btn-secondary m-1">Mechanical Design</button>
           </div>
         </div>
       </div>
-      <br />
-
+      <br>
       <!-- Contact Me Content -->
       <div class="bg-body-tertiary p-5 rounded" id="contact">
         <div class="row">
@@ -188,7 +212,7 @@
           </div>
         </div>
       </div>
-      <br />
+      <br>
     </main>
 
     <p class="bg-dark text-white m-0 small">
@@ -200,5 +224,8 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./assets/js/search.js"></script>
   </body>
 </html>

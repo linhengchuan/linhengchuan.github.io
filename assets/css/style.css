@@ -126,3 +126,23 @@ img:hover {
     font-size: 1.75rem;
   }
 }
+
+/* Add responsive icon sizing */
+section img.w-50 {
+  max-width: 150px;
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  section img.w-50 {
+    max-width: 100px;
+    width: 40%;
+  }
+}
+
+@media (max-width: 576px) {
+  section img.w-50 {
+    max-width: 80px;
+    width: 30%;
+  }
+}
